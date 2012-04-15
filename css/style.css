@@ -1,4 +1,6 @@
 @import url('reset.css');
+@import url(http://fonts.googleapis.com/css?family=Diplomata+SC);
+@import url(http://fonts.googleapis.com/css?family=Economica:400,700);
 
 /* =================================
    ========== BASE STYLES ==========
@@ -24,7 +26,6 @@ hr {
   width:940px;
   margin:0 auto;
 }
-
 
 /* =================================
    ========== PAGE STYLES ==========
@@ -116,6 +117,7 @@ nav.primary ul li a {
   line-height:48px;
   color:#dddacf;
   padding:12px 35px;
+  padding:12px 32.5px\9;
   text-decoration:none;
   border-right:1px solid #24231f;
 }
