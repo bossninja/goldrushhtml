@@ -1,0 +1,12 @@
+*.psd
+*.sublime-project
+*.sublime-workspace
+.DS_Store
+*~
+*.tmproj
+tmtags
+coverage
+rdoc
+pkg
+.rvmrc
+.bundle
