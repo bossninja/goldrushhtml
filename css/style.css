@@ -391,7 +391,7 @@ footer.footer {
 
 .maps {
   margin:0 auto;
-  width:85%;
+  width:100%;
   text-align:center;
 }
 
@@ -399,7 +399,7 @@ footer.footer {
   background:url(../images/sprite.png) no-repeat 0 -200px;
   width:304px;
   height:127px;
-  margin:30px 50px;
+  margin:30px 3.5%;
   display:inline-block;
 }
 
