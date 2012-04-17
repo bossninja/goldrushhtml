@@ -118,8 +118,14 @@ nav.primary { width:960px; }
 nav.primary ul,
 nav.primary ul li {
   margin:0;
+  text-align:center;
 }
 
+nav.primary ul li.nav1 { width:145px; }
+nav.primary ul li.nav2 { width:175px; }
+nav.primary ul li.nav3 { width:175px; }
+nav.primary ul li.nav4 { width:294px; }
+nav.primary ul li.nav5 { width:170px; }
 nav.primary ul li:first-child { border-left:1px solid #24231f; }
 nav.primary ul li {
   float:left;
@@ -132,9 +138,9 @@ nav.primary ul li {
 nav.primary ul li a {
   display:inline-block;
   line-height:48px;
+  width:100%;
   color:#dddacf;
-  padding:12px 35px;
-  padding:12px 33.9px\9;
+  padding:12px 0;
   text-decoration:none;
   border-right:1px solid #24231f;
 }
@@ -407,19 +413,25 @@ footer.footer {
 /* MAPS ================================= */
 
 .maps {
-  margin:0 auto;
   width:100%;
   text-align:center;
+}
+
+.maps .wrapper {
+  width:1106px;
+  margin:0 auto;
 }
 
 .maps .map {
   background:url(../images/sprite.png) no-repeat 0 -200px;
   width:304px;
   height:127px;
-  margin:30px 3.5%;
+  margin:30px 0 30px 97px;
   display:inline-block;
+  float:left;
 }
 
+.maps .map:first-child { margin-left:0; }
 .maps .map a {
   display:inline-block;
 
@@ -456,9 +468,13 @@ footer.footer {
 
 /* HACKS ================================= */
 
-/* chrome */
+/* chrome 
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   nav.primary ul li a { padding:12px 34px; }
   nav.primary ul li:nth-child(2) { margin:0 -1px 0 0; }
   .content-wrapper.steps .tabs-content li.teaser p.continue a.step-1 img { margin:-10px 0 0 15px; }
 }
+
+/* opera 
+noindex:-o-prefocus, nav.primary ul li a { padding:12px 34px; }
+noindex:-o-prefocus, nav.primary ul li:nth-child(2) { margin:0 -1px 0 0; }*/
