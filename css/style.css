@@ -96,8 +96,25 @@ header.subheading {
   border-bottom:1px solid #171614;
 }
 
-nav.container.primary { width:960px; }
+.wrap.navigation.fixed nav.primary {
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  z-index:9;
+  background:#403e37;
+  box-shadow:0 1px 42px rgba(0, 0, 0, 0.5);
+}
 
+.wrap.navigation.fixed nav.primary ul {
+  width:960px;
+  margin:0 auto;
+  overflow:hidden;
+  padding-right:0;
+  padding-left:0;
+}
+
+nav.primary { width:960px; }
 nav.primary ul,
 nav.primary ul li {
   margin:0;
