@@ -8,6 +8,17 @@
 			($(window).scrollTop() >= $('.wrap.navigation').position().top) ?
 			$('.wrap.navigation').addClass('fixed') : $('.wrap.navigation').removeClass('fixed');
 		});
+
+		// Coupon
+		$('a.coupon').click(function(e){
+			e.preventDefault();
+
+			$('div.coupon').show();
+		});
+
+		$('div.coupon').mouseleave(function() {
+			$('div.coupon').hide('normal');
+		});
 		
 		// Locations Fun
 		$('.locations .tab').click(function(e){
@@ -37,7 +48,8 @@
 		// ScrollTo Fun
 		$('nav a').click(function(e){
 			e.preventDefault();
-			$("body, html").animate({
+
+			$('body, html').animate({
 				'scrollTop':$($(this).attr('href')).position(document.body).top-80
 			});
 		});

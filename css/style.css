@@ -81,22 +81,6 @@ h1.logo a {
   color:transparent;
 }
 
-header.main a.coupon {
-  font-size:18px;
-  font-weight:bold;
-  font-family:Arial, sans-serif;
-  padding:10px;
-  background:#e8a62c;
-  border:1px solid #ffb730;
-  border-top:none;
-  position:absolute;
-  top:0;
-  right:0;
-  text-shadow:0 1px 0 #ffb630;
-  color:#8e661b;
-  text-decoration:none;
-}
-
 header.subheading p {
   font-family: 'Diplomata SC', cursive;
   font-size:18px;
@@ -109,6 +93,49 @@ header.subheading {
   background:#24231f;
   border-top:1px solid #1f1e1a;
   width:960px;
+}
+
+/* coupon */
+
+header.main .coupon {
+  position:absolute;
+  top:0;
+  right:0;
+  color:#8e661b;
+  font-size:18px;
+  font-weight:bold;
+  font-family:Arial, sans-serif;
+  text-align:center;
+}
+
+header.main a.coupon,
+header.main div.coupon span,
+header.main div.coupon a {
+  padding:10px;
+  background:#e8a62c;
+  border:1px solid #ffb730;
+  border-top:none;
+  text-shadow:0 1px 0 #ffb630;
+  color:#8e661b;
+  text-decoration:none;
+}
+
+header.main div.coupon { 
+  background:url(../images/trans_bg.png); 
+  display:none;
+}
+
+header.main div.coupon span { display:block; }
+header.main div.coupon p { 
+  padding:24px 36px;
+  font-size:14px;
+}
+
+header.main div.coupon a {
+  display:inline-block;
+  border:1px solid #ffb730;
+  padding:6px 10px;
+  margin-bottom:20px;
 }
 
 /* NAVIGATION =================================
