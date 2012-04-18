@@ -96,6 +96,10 @@ header.subheading {
   border-bottom:1px solid #171614;
 }
 
+.wrap.navigation.fixed{
+	height:47px;
+}
+
 .wrap.navigation.fixed nav.primary {
   position:fixed;
   top:0;
@@ -332,7 +336,7 @@ nav.primary ul li a:hover {
   font-weight:normal;
 }
 
-.content-wrapper.steps .tabs-content li.teaser p.continue a.step-1 {
+.content-wrapper.steps .tabs-content li.teaser p.continue a.step {
   font-size:18px;
   text-decoration:none;
   font-weight:bold;
@@ -353,7 +357,7 @@ nav.primary ul li a:hover {
   background: linear-gradient(top, #393730 0%, #2f2d27 50%, #24231f 50%, #24231f 100%);
 }
 
-.content-wrapper.steps .tabs-content li.teaser p.continue a.step-1 img { margin:0 0 0 15px; }
+.content-wrapper.steps .tabs-content li.teaser p.continue a.step img { margin:0 0 0 15px; }
 .content-wrapper.steps .tabs-content li .teaser { 
   background:url(../images/sprite_jpg.jpg) no-repeat 0 -350px;
   height:330px;
@@ -361,6 +365,10 @@ nav.primary ul li a:hover {
   position:absolute;
   bottom:0;
   left:0;
+}
+
+.content-wrapper.steps .tabs-content li.teaser p.continue a.step img{
+	margin-top:-12px;
 }
 
 .right-menu {
