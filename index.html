@@ -18,10 +18,10 @@
     <![endif]-->
 
     <!-- Le fav and touch icons -->
-    <link rel="shortcut icon" href="assets/ico/favicon.ico">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+    <link rel="shortcut icon" href="images/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
   </head>
 
   <body>
@@ -40,6 +40,7 @@
 
 	 <!-- nav -->
     <div id="Locations" class="wrap navigation">
+
 		<nav class="container primary clearfix">
 			<ul>
 				<li class="nav1"><a href="#Locations" class="active">Locations</a></li>
@@ -52,7 +53,7 @@
 	</div><!-- end nav -->
 
 	<!-- Locations -->
-    <div class="wrap">
+ 	<div class="wrap">
 		<section class="maps">
 			<div class="wrapper">
 				<div class="map"><a href="#" class="left-arrow">Left</a></div>
@@ -68,16 +69,16 @@
 		  	<div class="locations">
 		  		<div class="centered-menu economica-font">
 					<ul class="tabs">
-						<li><a class="tab active" href="#aurora">Aurora</a></li> <!-- add class of "active" in anchor when active -->
-						<li><a class="tab" href="#denver">Denver</a></li>
-						<li><a class="tab" href="#lakewood">Lakewood</a></li>
-						<li><a class="tab" href="#wheat-ridge">Wheat Ridge</a></li>
-						<li><a class="tab" href="#westminister">Westminister</a></li>
+						<li><a class="tab active" href="#Aurora">Aurora</a></li> <!-- add class of "active" in anchor when active -->
+						<li><a class="tab" href="#Denver">Denver</a></li>
+						<li><a class="tab" href="#Lakewood">Lakewood</a></li>
+						<li><a class="tab" href="#WheatRidge">Wheat Ridge</a></li>
+						<li><a class="tab" href="#Westminister">Westminister</a></li>
 					</ul>
 				</div>
 
 				<ul class="tabs-content">
-					<li class="content active" id="aurora">
+					<li class="content active" id="Aurora">
 						<div class="tabs-content-wrapper clearfix">
 							<ul>
 								<li>
@@ -102,10 +103,10 @@
 							</ul>
 						</div>
 					</li>
-					<li class="content" id="denver">Denver</li>
-					<li class="content" id="lakewood">Lakewood</li>
-					<li class="content" id="wheat-ridge">Wheat Ridge</li>
-					<li class="content" id="westminister">Westminister</li>
+					<li class="content" id="Denver">Denver</li>
+					<li class="content" id="Lakewood">Lakewood</li>
+					<li class="content" id="WheatRidge">Wheat Ridge</li>
+					<li class="content" id="Westminister">Westminister</li>
 				</ul>
 		  	</div>
 	  	</section>
@@ -119,34 +120,66 @@
 		  		<h2 id="HowItWorks" class="heading secondary">It is as simple as 1-2-3</h2>
 		  	</header>
 
-		  	<div class="content-wrapper steps">
-				<div class="right-menu economica-font">
-					<ul class="tabs">
-						<li><a class="tab" href="#step-1">Step 1</a></li> <!-- add class of "active" in anchor when active -->
-						<li><a class="tab" href="#step-2">Step 2</a></li>
-						<li><a class="tab" href="#step-3">Step 3</a></li>
-					</ul>
-				</div>
+		  	<div class="content-wrapper steps economica-font">
+					<div class="right-menu">
+						<ul class="tabs">
+							<li><a class="tab" href="#StepOne">Step 1</a></li> <!-- add class of "active" in anchor when active -->
+							<li><a class="tab" href="#StepTwo">Step 2</a></li>
+							<li><a class="tab" href="#StepThree">Step 3</a></li>
+						</ul>
+					</div>
 
 					<ul class="tabs-content">
-						<li class="active teaser content">
-							<p class="subheading economica-font">
+						<li class="content active">
+							<div class="left-texts align-right">
 								We buy your precious metals and gems<br />
 								You get paid with CASH
-							</p>
+							</div>
 							
-							<p class="subheading-2 economica-font">
+							<div class="right-texts">
 								You are just three steps<br />
-								away from getting paid.
-							</p>
+								away from getting paid.<br /><br />
 
-							<p class="continue economica-font">Continue to <a href="#step-1" class="step">Step 1<img src="images/right_arrow.png" alt="&gt;"/></a></p>
+								<div class="continue">Continue to <a href="#StepOne" class="step">Step 1<span class="right-arrow"></span></a></div>
+							</div>
 
-							<div class="teaser"></div>
+							<div class="step-image"></div>
 						</li>
-						<li class="content" id="step-1">Step 1</li>
-						<li class="content" id="step-2">Step 2</li>
-						<li class="content" id="step-3">Step 3</li>
+
+						<li class="content" id="StepOne">
+							<div class="right-texts align-right">
+								Find our location nearest to you<br />
+								<small>Our locations are listed above.<br />
+								Click on a location’s map for directions.</small><br /><br />
+
+								<div class="continue">Continue to <a href="#StepTwo" class="step">Step 2<span class="right-arrow"></span></a></div>
+							</div>
+
+							<div class="step-image step-one"></div>
+						</li>
+
+						<li class="content" id="StepTwo">
+							<div class="right-texts">
+								Bring in any items that contain<br />
+								precious metals or gems.<br />
+								<small>Our Precious Metal Specialists<br />
+								will take a look at anything.</small><br /><br />
+
+								<div class="continue">Continue to <a href="#StepThree" class="step">Step 3<span class="right-arrow"></span></a></div>
+							</div>
+
+							<div class="step-image step-two"></div>
+						</li>
+
+						<li class="content" id="StepThree">
+							
+							<div class="right-texts">
+								Final Step<br />
+								We pay you with CASH!
+							</div>
+
+							<div class="step-image step-three"></div>
+						</li>
 					</ul>
 		  	</div>
 

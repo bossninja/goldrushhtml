@@ -9,7 +9,6 @@
 			$('.wrap.navigation').addClass('fixed') : $('.wrap.navigation').removeClass('fixed');
 		});
 		
-		
 		// Locations Fun
 		$('.locations .tab').click(function(e){
 			e.preventDefault();
@@ -22,7 +21,7 @@
 		});
 		
 		// Steps Fun
-		$('.steps .tab').click(function(e){
+		$('.steps .tab, .steps .step').click(function(e){
 			e.preventDefault();
 			
 			$('.steps .content').removeClass('active');			
@@ -30,15 +29,19 @@
 			
 			$('.steps .tab').removeClass('active');
 			$(this).addClass('active');
+
+			var tab = $(this).attr('href');
+			$('.steps .tab[href*="' + tab + '"]').addClass('active');
 		});
 		
 		// ScrollTo Fun
 		$('nav a').click(function(e){
 			e.preventDefault();
-			$(document.body).animate({
+			$("body, html").animate({
 				'scrollTop':$($(this).attr('href')).position(document.body).top-80
 			});
 		});
 		
 	});
+
 })(jQuery);
